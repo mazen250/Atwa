@@ -1,0 +1,88 @@
+.heroContainer{
+    width: 100%;
+    min-height: 92vh;
+    background-color: antiquewhite;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../images/herotemp.jpg') no-repeat top center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heroText{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    /* text-shadow: 2px 2px black; */
+}
+.heroText .btn{
+    background-color: #f1c40f;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+.heroText .btn:hover{
+    background-color: #8b8773;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+
+.button {
+    color: #d6d4d4;
+    border: 3px solid #8f8f8f;
+    border-radius:8px;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-family: tahoma;
+    letter-spacing:5px;
+    cursor: pointer;
+    font-weight: bold;
+    filter: drop-shadow(0 0 15px #c9c9c9) drop-shadow(0 0 50px #e0dcdc) contrast(2) brightness(2);
+    transition: .5s;
+    width: 40%;
+    margin:auto;
+    margin-top: 20px;
+    z-index: 1;
+  }
+  
+  .button:hover {
+    color: black;
+    background-color: #ebebeb;
+    filter: drop-shadow(0 0 20px #c7c7c7) contrast(2) brightness(2);
+  }
+
+  /* responsive design */
+    @media screen and (max-width: 600px) {
+        .heroContainer{
+            height: 100vh;
+        }
+        .heroText{
+            font-size: 1.1rem;
+        }
+    }
+
+.heroText h3{
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.heroText p{
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-align: center;
+    margin-top:5px;
+}
