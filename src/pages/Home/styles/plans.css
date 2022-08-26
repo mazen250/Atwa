@@ -1,0 +1,157 @@
+.plansContainer{
+    width: 100%;
+    min-height:100vh ;
+   /* background-color: rgb(20, 20, 20); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../../../images/white.jpg') no-repeat top center;
+    background-size:cover;
+    
+}
+.plansContainer h1{
+    font-weight: 500;
+    margin-top: 5vh;
+    color: rgb(63, 64, 65);
+    font-size: 1.7rem;
+}
+
+.plans{
+    width: 80%;
+    margin: auto;
+    min-height:80vh ;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../images/pack.jpg') no-repeat top center;
+    background-size:cover; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:center ;
+
+}
+
+.plan{
+    width: 21%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.644);
+    margin: 20px;
+    color: aliceblue;
+     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../images/pack.jpg') no-repeat top center;
+    background-size:cover;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+
+
+.plan .txt {
+   
+    /* width: 70%; */
+    margin: auto;
+    margin-top: 0;
+    height: 20%;
+    border-bottom: 1px solid rgb(199, 199, 199);
+    padding-bottom: 10px;    
+}
+.plan .txt h1{
+    color: rgb(167, 167, 167);
+    font-weight: 600;
+    font-size: 28px;
+
+}
+.plan .price{
+    margin-bottom:20px ;
+    border-bottom: 1px solid rgb(197, 196, 196);
+    padding-bottom: 10px;
+    }
+    .plan .t{
+        width: 70%;
+        margin: auto;
+        font-size: 13px;
+        color: rgb(197, 197, 197);
+    }
+
+.plan .bt{
+    color: rgb(0, 0, 0);
+    
+    background-color: rgb(228, 227, 227);
+    padding: 8px;
+    border-radius:3px ;
+    
+    width: 10vw;
+}
+
+
+@media screen and (max-width: 600px){
+    .plans{
+        width: 100%;
+      
+        
+        justify-content: space-between;
+        flex-direction: column;
+    
+    }
+    
+    .plan{
+        width: 80%;
+        height: 60vh;
+        background-color: rgba(255, 255, 255, 0.644);
+        margin: 20px;
+        color: aliceblue;
+         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../images/pack.jpg') no-repeat top center;
+        background-size:cover;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    .plan .bt{
+        color: rgb(0, 0, 0);
+        
+        background-color: rgb(228, 227, 227);
+        padding: 8px;
+        border-radius:3px ;
+        width: 40vw;
+        font-weight: bold;
+    }
+ }
+
+ @media screen and (min-width: 1800px){
+    .plansContainer{
+        width: 100%;
+        min-height:60vh ;}
+    
+    
+    .plans{
+        width: 70%;
+        max-height:60vh ;
+        
+        justify-content: space-between;
+   
+    
+    }
+    
+    .plan{
+        width: 21%;
+        height: 50vh;
+       }
+    .plan .bt{
+        color: rgb(0, 0, 0);
+        
+        background-color: rgb(228, 227, 227);
+        padding: 8px;
+        border-radius:3px ;
+        width: 10vw;
+        font-weight: bold;
+    }
+ }

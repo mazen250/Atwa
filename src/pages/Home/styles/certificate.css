@@ -1,0 +1,146 @@
+.certContainer{
+    width: 100%;
+    min-height:70vh ;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('../../../images/empty.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-bottom: 100px; */
+}
+.singleCer{
+    width: 17%;
+    min-height: 50vh;
+    max-height: 55vh;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+.singleCer img{
+    width: 50%;
+    margin: auto;
+    
+}
+.singleCer .tex p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+/* .singleCer .tex a{
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 10px !important;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+} */
+
+/* CSS */
+.singleCer .button-86 {
+  all: unset;
+  min-width: 65% !important;
+  margin: auto !important;
+  height: 15px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.singleCer .button-86::after,
+.singleCer .button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
+
+.singleCer .button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.singleCer .button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.singleCer .button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.singleCer .button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.singleCer .button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+#root > div > div.homeContainer > div.certContainer > div:nth-child(4){
+    border:none;
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 600px){
+    .certContainer{
+        flex-direction: row;
+        max-width: 100%;
+        min-height:60vh ;
+    }
+    .singleCer{
+        width: 80vw;
+        height: 30vh !important;
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 30px;
+        border-bottom: 3px solid rgb(34, 34, 34);
+
+    }
+    .singleCer img{
+        width: 70%;
+        margin: auto;
+        
+    }
+    .singleCer .tex p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+}

@@ -29,9 +29,10 @@ const Logo = styled.h1`
   font-size: 25px;
   color: white;
   z-index: 100;
-  padding-left: 100px;
+  padding-left: 50px;
   @media (max-width: 769px) {
-    padding-left: 20px;
+    padding-left: 10px;
+    margin-top: -20px;
   }
 `;
 
@@ -44,7 +45,16 @@ const Menu = styled.ul`
     margin-left: 40px;
   }
   li:nth-child(3) {
-    margin: 0px 50px;
+    margin: 0px 40px;
+  }
+  li:nth-child(4) {
+    margin: 0px 35px;
+    margin-left: -5px;
+  }
+  li:nth-child(5) {
+    margin: 0px 15px;
+    margin-left: -5px;
+    padding-right: 20px;
   }
 
   @media (max-width: 768px) {
@@ -71,6 +81,7 @@ const NavIcon = styled.button`
   border: none;
   outline: none;
   z-index: 110;
+  padding-top: 10px;
   @media (min-width: 769px) {
     display: none;
   }
@@ -85,6 +96,7 @@ const Line = styled.span`
   background-color: #fff;
   transition: width 0.4s ease-in-out;
   z-index: 100;
+
   :nth-child(2) {
     width: ${(props) => (props.open ? "40%" : "70%")};
   }
@@ -134,12 +146,12 @@ const Navbar = () => {
         <Menu>
           <Item>
             <Link target="#" href="https://www.instagram.com/igor_dumencic/">
-              who am i
+              About Me
             </Link>
           </Item>
           <Item>
             <Link target="#" href="https://www.behance.net/igordumencic">
-              what will you get
+              what i offer
             </Link>
           </Item>
           <Item>
@@ -149,7 +161,12 @@ const Navbar = () => {
           </Item>
           <Item>
             <Link target="#" href="https://github.com/Igor178">
-              About Me
+              get to know me
+            </Link>
+          </Item>
+          <Item>
+            <Link target="#" href="https://github.com/Igor178">
+              Contact Us
             </Link>
           </Item>
         </Menu>
@@ -179,6 +196,16 @@ const Navbar = () => {
           <Item>
             <Link target="#" href="https://github.com/Igor178">
               About Me
+            </Link>
+          </Item>
+          <Item>
+            <Link target="#" href="https://github.com/Igor178">
+              get to know me
+            </Link>
+          </Item>
+          <Item>
+            <Link target="#" href="https://github.com/Igor178">
+              Contact Us
             </Link>
           </Item>
         </OverlayMenu>

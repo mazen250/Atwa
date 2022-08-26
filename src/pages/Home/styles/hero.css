@@ -1,18 +1,20 @@
 .heroContainer{
     width: 100%;
-    min-height: 92vh;
+    height: 92vh;
+    
     background-color: antiquewhite;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../images/herotemp.jpg') no-repeat top center;
-    background-size: cover;
+    background-size:cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .heroText{
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
+    margin-top: 10%;
     /* text-shadow: 2px 2px black; */
 }
 .heroText .btn{
@@ -59,19 +61,12 @@
   
   .button:hover {
     color: black;
+    font-weight: bolder;
     background-color: #ebebeb;
     filter: drop-shadow(0 0 20px #c7c7c7) contrast(2) brightness(2);
   }
 
-  /* responsive design */
-    @media screen and (max-width: 600px) {
-        .heroContainer{
-            height: 100vh;
-        }
-        .heroText{
-            font-size: 1.1rem;
-        }
-    }
+ 
 
 .heroText h3{
     font-size: 1.3rem;
@@ -85,4 +80,65 @@
     font-weight: 100;
     text-align: center;
     margin-top:5px;
+}
+
+.links{
+    color: aliceblue;
+   /* margin-bottom: 10%; */
+   height: 10vh;
+}
+.links ul{
+    display: flex;
+    flex-direction: row;
+    width: 25vw;
+    margin:auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.links ul li{
+    list-style: none;
+}
+.links ul li a {
+    text-decoration: none;
+}
+.links ul li a  .img{
+    width: 60px;
+    filter: drop-shadow(0 0 0.75rem rgb(161, 161, 161));
+
+}
+
+#root > div > div.homeContainer > div > div.links > ul > li:nth-child(2) > a > img{
+    width: 35px;
+    margin-right: 5px;
+}
+#root > div > div.homeContainer > div > div.links > ul > li:nth-child(3) > a > img{
+    width: 35px;
+}
+
+ /* responsive design */
+ @media screen and (max-width: 600px) {
+    .heroContainer{
+        min-height: 94vh;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../../images/hero.jpeg') no-repeat top center;
+        
+    }
+    .heroText{
+        font-size: 1.1rem;
+       
+    }
+    .links ul{
+        width: 30vh;
+    }
+    .links ul li a  .img{
+        width: 50px;
+        filter: drop-shadow(0 0 0.75rem rgb(161, 161, 161));
+    
+    }
+    
+    #root > div > div.homeContainer > div > div.links > ul > li:nth-child(2) > a > img{
+        width: 30px;
+    }
+    #root > div > div.homeContainer > div > div.links > ul > li:nth-child(3) > a > img{
+        width: 30px;
+    }
 }
