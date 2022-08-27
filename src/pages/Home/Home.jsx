@@ -5,6 +5,7 @@ import Certificate from "./components/Certificate";
 import Services from "./components/Services";
 import Transformation from "./components/Transformation";
 import Plans from "./components/Plans";
+import Social from "./components/Social";
 function Home() {
   return (
     <div className="homeContainer">
@@ -13,8 +14,9 @@ function Home() {
       <Certificate />
       <Transformation />
 
-      <Services />
+      {/* <Services /> */}
       <Plans />
+      <Social />
     </div>
   );
 }

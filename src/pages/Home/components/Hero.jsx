@@ -15,7 +15,7 @@ function Hero() {
         <h3>Abdelrahman Atwa</h3>
         <p>Personal trainer & Nutritionist</p>
         {/* <button className="btn">Join Now</button> */}
-        <div className="button">JOIN NOW</div>
+        <div className="buttonz">JOIN NOW</div>
       </div>
       <div className="links">
         <ul>

@@ -26,10 +26,7 @@
         transition: all 0.3s ease-in-out; 
      }
 
-     .images img:hover{
-        transform: scale(1.8);
-        padding-left:100px
-     }
+    
 
      button {
         position: relative;
@@ -120,10 +117,31 @@
         color: #fff;
        }
 
+       .images img:hover{
+           
+        transform: scale(1.6);
+        margin-left: 100px;
+        /* padding-left:100px */
+     }
+
      @media screen and (max-width: 600px){
        
         .images img{
             width: 37%;
+            border-radius: 5px;
+            transition: all 0.5s ease-in-out; 
+        }
+        .images img:hover{
+            transform: scale(2);
+            padding-left:0px
+         }
+    
+     }
+
+     @media screen and (max-width: 400px){
+       
+        .images img{
+            width: 35%;
             border-radius: 5px;
             transition: all 0.5s ease-in-out; 
         }
