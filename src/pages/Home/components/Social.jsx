@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/social.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Social() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div className="socialContainer">
       <h1>Follow us on social media</h1>
-      <div className="wrapper">
+      <div
+        className="wrapper"
+        // data-aos="fade-up"
+        // data-aos-duration="2000"
+        // data-aos-anchor-easing="ease-in-out"
+      >
         <div className="buttonn">
           <div className="icon">
             <i className="fab fa-facebook-f"></i>
@@ -13,7 +25,7 @@ function Social() {
             <a href="https://www.facebook.com/mazen.fayezmano">Facebook</a>
           </span>
         </div>
-        <div className="buttonn">
+        {/* <div className="buttonn">
           <div className="icon">
             <i className="fab fa-whatsapp"></i>
           </div>
@@ -21,7 +33,7 @@ function Social() {
             {" "}
             <a href="https://www.facebook.com/mazen.fayezmano">Whatsapp</a>
           </span>
-        </div>
+        </div> */}
         <div className="buttonn">
           <div className="icon">
             <i className="fab fa-instagram"></i>

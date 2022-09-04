@@ -6,10 +6,10 @@
 
 .App {
   text-align: center;
- 
+  /* overflow-x: hidden; */
 }
 body::-webkit-scrollbar {
-  width: 1em;
+  /* width: 1em; */
 }
  
 body::-webkit-scrollbar-track {
@@ -19,4 +19,16 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
+}
+
+@media screen and (max-width: 600px){
+  .App{
+    overflow-x: hidden;
+  }
+  /* #root > div > div > ul{
+    visibility: collapse;
+  } */
+  #root > div > div.sc-iBkjds.kmuJHY > ul{
+    visibility: hidden;
+  }
 }

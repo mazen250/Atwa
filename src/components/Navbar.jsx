@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
+import ScrollIntoView from "react-scroll-into-view";
 const Nav = styled.nav`
   padding: 0 50px;
   min-height: 8vh;
@@ -26,6 +26,7 @@ const Nav = styled.nav`
 `;
 
 const Logo = styled.h1`
+  text-decoration: none;
   font-size: 25px;
   color: white;
   z-index: 100;
@@ -68,7 +69,7 @@ const Link = styled.a`
   color: white;
   text-decoration: none;
   z-index: 100;
-
+  cursor: pointer;
   transition: 0.3s ease-in-out all;
   :hover {
     text-decoration: underline;
@@ -118,13 +119,13 @@ const Overlay = styled.div`
 const OverlayMenu = styled.ul`
   list-style: none;
   position: absolute;
-  z-index: 100;
+  z-index: 0;
   left: 50%;
   top: 45%;
   transform: translate(-50%, -50%);
 
   li {
-    z-index: 100;
+    z-index: 0;
     opacity: ${(props) => (props.open ? 1 : 0)};
     font-size: 25px;
     margin: 50px 0px;
@@ -132,7 +133,7 @@ const OverlayMenu = styled.ul`
   }
 
   li:nth-child(2) {
-    z-index: 100;
+    z-index: 0;
     margin: 50px 0px;
   }
 `;
@@ -141,33 +142,38 @@ const Navbar = () => {
   const [toggle, toggleNav] = useState(false);
   return (
     <>
-      <Nav>
-        <Logo>ATWA</Logo>
+      <Nav id="heroContainer">
+        <Logo>
+          <a
+            href="/"
+            style={{
+              color: "white",
+              textDecoration: "none",
+            }}
+          >
+            ATWA
+          </a>
+        </Logo>
         <Menu>
+          {/* <Item>
+           
+            <ScrollIntoView selector="#heroContainer">
+              <Link>About Me</Link>
+            </ScrollIntoView>
+          </Item> */}
           <Item>
-            <Link target="#" href="https://www.instagram.com/igor_dumencic/">
-              About Me
-            </Link>
+            <Link href="/">Home</Link>
           </Item>
           <Item>
-            <Link target="#" href="https://www.behance.net/igordumencic">
-              what i offer
-            </Link>
+            <ScrollIntoView selector="#packages">
+              <Link>packages</Link>
+            </ScrollIntoView>
           </Item>
           <Item>
-            <Link target="#" href="https://github.com/Igor178">
-              packages
-            </Link>
+            <Link href="/about">get to know me</Link>
           </Item>
           <Item>
-            <Link target="#" href="https://github.com/Igor178">
-              get to know me
-            </Link>
-          </Item>
-          <Item>
-            <Link target="#" href="https://github.com/Igor178">
-              Contact Us
-            </Link>
+            <Link href="contact">Contact Us</Link>
           </Item>
         </Menu>
         <NavIcon onClick={() => toggleNav(!toggle)}>
@@ -179,34 +185,32 @@ const Navbar = () => {
       <Overlay open={toggle}>
         <OverlayMenu open={toggle}>
           <Item>
-            <Link target="#" href="https://www.instagram.com/igor_dumencic/">
-              who am i
-            </Link>
+            <Link href="/">Home</Link>
           </Item>
-          <Item>
-            <Link target="#" href="https://www.behance.net/igordumencic">
+          {/* <Item>
+            <Link target="#" href="https://www.facebook.com/mazen.fayezmano">
               what will you get
             </Link>
-          </Item>
+          </Item> */}
           <Item>
-            <Link target="#" href="https://github.com/Igor178">
-              packages
-            </Link>
+            <ScrollIntoView selector="#packages">
+              <Link>packages</Link>
+            </ScrollIntoView>
           </Item>
-          <Item>
-            <Link target="#" href="https://github.com/Igor178">
+          {/* <Item>
+            <Link target="#" href="https://www.facebook.com/mazen.fayezmano">
               About Me
             </Link>
+          </Item> */}
+          <Item>
+            <Item>
+              <Link href="/about">get to know me</Link>
+            </Item>
           </Item>
           <Item>
-            <Link target="#" href="https://github.com/Igor178">
-              get to know me
-            </Link>
-          </Item>
-          <Item>
-            <Link target="#" href="https://github.com/Igor178">
-              Contact Us
-            </Link>
+            <Item>
+              <Link href="contact">Contact Us</Link>
+            </Item>
           </Item>
         </OverlayMenu>
       </Overlay>

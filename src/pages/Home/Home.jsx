@@ -6,17 +6,20 @@ import Services from "./components/Services";
 import Transformation from "./components/Transformation";
 import Plans from "./components/Plans";
 import Social from "./components/Social";
+import Video from "./components/Video";
+import ScrollToTop from "../../components/ScrollToTop";
 function Home() {
   return (
     <div className="homeContainer">
       <Hero />
-
+      <ScrollToTop />
       <Certificate />
       <Transformation />
 
       {/* <Services /> */}
       <Plans />
       <Social />
+      <Video />
     </div>
   );
 }

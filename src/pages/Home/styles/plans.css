@@ -2,6 +2,7 @@
     width: 100%;
     min-height:100vh ;
    /* background-color: rgb(20, 20, 20); */
+   
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -21,7 +22,8 @@
 .plans{
     width: 80%;
     margin: auto;
-    min-height:80vh ;
+    min-height:100vh ;
+    
     /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../../../images/pack.jpg') no-repeat top center;
     background-size:cover; */
     display: flex;
@@ -89,42 +91,6 @@
 }
 
 
-@media screen and (max-width: 600px){
-    .plans{
-        width: 100%;
-      
-        
-        justify-content: space-between;
-        flex-direction: column;
-    
-    }
-    
-    .plan{
-        width: 80%;
-        height: 60vh;
-        background-color: rgba(255, 255, 255, 0.644);
-        margin: 20px;
-        color: aliceblue;
-         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../images/pack.jpg') no-repeat top center;
-        background-size:cover;
-        border: 1px solid rgb(0, 0, 0);
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    }
-    .plan .bt{
-        color: rgb(0, 0, 0);
-        
-        background-color: rgb(228, 227, 227);
-        padding: 8px;
-        border-radius:3px ;
-        width: 40vw;
-        font-weight: bold;
-    }
- }
 
  @media screen and (min-width: 1800px){
     .plansContainer{
@@ -152,6 +118,156 @@
         padding: 8px;
         border-radius:3px ;
         width: 10vw;
+        font-weight: bold;
+    }
+ }
+ @media screen and (max-width: 1200px){
+    .plans{
+        width: 100%;
+      
+        
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    
+    .plan{
+        width: 45%;
+        height: 60vh;
+        background-color: rgba(255, 255, 255, 0.644);
+        /* margin: 20px; */
+        color: aliceblue;
+         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../images/pack.jpg') no-repeat top center;
+        background-size:cover;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    .plan .bt{
+        color: rgb(0, 0, 0);
+        
+        background-color: rgb(228, 227, 227);
+        padding: 8px;
+        border-radius:3px ;
+        width: 25vw;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .plans{
+        width: 100%;
+      
+        
+        justify-content: space-between;
+        flex-direction: column;
+      
+    }
+    
+    .plan{
+        width: 65%;
+        
+        height: 60vh;
+        background-color: rgba(255, 255, 255, 0.644);
+        margin: 20px;
+        color: aliceblue;
+         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../images/pack.jpg') no-repeat top center;
+        background-size:cover;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    .plan .bt{
+        color: rgb(0, 0, 0);
+        
+        background-color: rgb(228, 227, 227);
+        padding: 8px;
+        border-radius:3px ;
+        width: 40vw;
+        font-weight: bold;
+    }
+ }
+ @media screen and (max-width: 770px){
+    .plans{
+        width: 100%;
+      
+        
+        justify-content: space-between;
+        flex-direction: column;
+      
+    }
+    
+    .plan{
+        width: 65%;
+        
+        height: 60vh;
+        background-color: rgba(255, 255, 255, 0.644);
+        margin: 20px;
+        color: aliceblue;
+         background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../images/pack.jpg') no-repeat top center;
+        background-size:cover;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    .plan .bt{
+        color: rgb(0, 0, 0);
+        
+        background-color: rgb(228, 227, 227);
+        padding: 8px;
+        border-radius:3px ;
+        width: 40vw;
+        font-weight: bold;
+    }
+ }
+ 
+@media screen and (max-width:390px){
+    .plans{
+        width: 100%;
+      
+        
+        justify-content: space-between;
+        flex-direction: column;
+      
+    }
+    
+    .plan{
+        width: 65%;
+        
+        height: 70vh;
+        background-color: rgba(255, 255, 255, 0.644);
+        margin: 20px;
+        color: aliceblue;
+         /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../../images/pack.jpg') no-repeat top center; */
+        background-size:cover;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+    .plan .bt{
+        color: rgb(0, 0, 0);
+        
+        background-color: rgb(228, 227, 227);
+        padding: 8px;
+        border-radius:3px ;
+        width: 40vw;
         font-weight: bold;
     }
  }

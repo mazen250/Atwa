@@ -1,13 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../styles/hero.css";
 import insta from "../../../images/instagram.png";
 import facebook from "../../../images/facebook.png";
 import youtube from "../../../images/youtube.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function Hero() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
   return (
     <div className="heroContainer">
       <div className="div"></div>
-      <div className="heroText">
+      <div
+        className="heroText"
+        data-aos="fade-right"
+        data-aos-duration="2000"
+        data-aos-anchor-easing="ease-in-out"
+      >
         <h1>
           STAY DISCIPLINE,
           <br /> STAY CONSISTENT

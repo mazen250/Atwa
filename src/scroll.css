@@ -1,0 +1,128 @@
+/* html, body{
+    height: 100%;
+  }
+  
+  a {
+    color: white;
+  }
+    
+  .long {
+    width: 100%;
+    background-color: #010e19;
+  }
+   
+  .container {
+    height: 400px;
+  }
+    
+  .scroll {
+    opacity: 0.3;
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    border: none;
+    
+    
+  }
+  
+  .arrow-up {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -9px;
+    margin-left: -5px;
+  }
+     */
+
+  /* .scroll a{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(27, 27, 27);
+    color: rgb(219, 219, 219);
+    bottom: 20px;
+    right: 20px;
+    
+} */
+.scroll {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(24, 24, 24);
+    color: rgb(219, 219, 219);
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* top: 50%;
+    left: 50%; */
+    transition: all 0.5s ease-in-out;
+}
+.scroll h1 {
+    /* text-decoration: none; */
+    color: aliceblue;
+    font-size: 35px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.scroll:hover{
+    transform: scale(1.1);
+    background-color: aliceblue;
+   
+    border-color: aliceblue;
+}
+.scroll:hover h1{
+    color: black;
+}
+
+@media screen and (max-width: 600px){
+    .scroll {
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgba(24, 24, 24, 0.425);
+        color: rgba(219, 219, 219, 0.068);
+        bottom: 10px;
+        right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        /* top: 50%;
+        left: 50%; */
+        transition: all 0.5s ease-in-out;
+    }
+    .scroll h1 {
+        text-decoration: none;
+        color: rgba(240, 248, 255, 0.336);
+        font-size: 28px;
+        padding-top: 5px;
+    }
+    
+    .scroll:hover{
+        transform: scale(1.1);
+        background-color: aliceblue;
+       
+        border-color: aliceblue;
+    }
+    .scroll:hover a{
+        color: black;
+    }
+}
