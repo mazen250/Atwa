@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ScrollIntoView from "react-scroll-into-view";
+import { Link } from "react-router-dom";
 const Nav = styled.nav`
   padding: 0 50px;
   min-height: 8vh;
@@ -65,7 +66,7 @@ const Menu = styled.ul`
 
 const Item = styled.li``;
 
-const Link = styled.a`
+const Linkk = styled.a`
   color: white;
   text-decoration: none;
   z-index: 100;
@@ -162,18 +163,18 @@ const Navbar = () => {
             </ScrollIntoView>
           </Item> */}
           <Item>
-            <Link href="/">Home</Link>
+            <Linkk href="/">Home</Linkk>
           </Item>
           <Item>
             <ScrollIntoView selector="#packages">
-              <Link>packages</Link>
+              <Linkk>packages</Linkk>
             </ScrollIntoView>
           </Item>
           <Item>
-            <Link href="/about">get to know me</Link>
+            <Linkk href="/about">get to know me</Linkk>
           </Item>
           <Item>
-            <Link href="contact">Contact Us</Link>
+            <Linkk href="contact">Contact Us</Linkk>
           </Item>
         </Menu>
         <NavIcon onClick={() => toggleNav(!toggle)}>
@@ -185,7 +186,7 @@ const Navbar = () => {
       <Overlay open={toggle}>
         <OverlayMenu open={toggle}>
           <Item>
-            <Link href="/">Home</Link>
+            <Linkk href="/">Home</Linkk>
           </Item>
           {/* <Item>
             <Link target="#" href="https://www.facebook.com/mazen.fayezmano">
@@ -194,7 +195,7 @@ const Navbar = () => {
           </Item> */}
           <Item>
             <ScrollIntoView selector="#packages">
-              <Link>packages</Link>
+              <Linkk>packages</Linkk>
             </ScrollIntoView>
           </Item>
           {/* <Item>
@@ -204,12 +205,12 @@ const Navbar = () => {
           </Item> */}
           <Item>
             <Item>
-              <Link href="/about">get to know me</Link>
+              <Linkk href="/about">get to know me</Linkk>
             </Item>
           </Item>
           <Item>
             <Item>
-              <Link href="contact">Contact Us</Link>
+              <Linkk href="contact">Contact Us</Linkk>
             </Item>
           </Item>
         </OverlayMenu>

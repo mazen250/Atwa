@@ -22,7 +22,9 @@ function Social() {
             <i className="fab fa-facebook-f"></i>
           </div>
           <span>
-            <a href="https://www.facebook.com/mazen.fayezmano">Facebook</a>
+            <a href="https://www.facebook.com/abdrahman.atwa" target="blank">
+              Facebook
+            </a>
           </span>
         </div>
         {/* <div className="buttonn">
@@ -39,8 +41,9 @@ function Social() {
             <i className="fab fa-instagram"></i>
           </div>
           <span>
-            {" "}
-            <a href="https://www.facebook.com/mazen.fayezmano">Instagram</a>
+            <a href="https://www.instagram.com/atwa_3/" target="blank">
+              Instagram
+            </a>
           </span>
         </div>
         {/* <div class="buttonn">
@@ -54,8 +57,9 @@ function Social() {
             <i className="fab fa-youtube"></i>
           </div>
           <span>
-            {" "}
-            <a href="https://www.facebook.com/mazen.fayezmano">Youtube</a>
+            <a href="https://www.youtube.com/" target="blank">
+              Youtube
+            </a>
           </span>
         </div>
       </div>
