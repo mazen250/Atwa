@@ -15,6 +15,13 @@ import twelve from "../../../transformationImages/12.jpg";
 import therteen from "../../../transformationImages/13.jpg";
 import fourteen from "../../../transformationImages/14.jpg";
 import fifteen from "../../../transformationImages/15.jpg";
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
+const width = window.innerWidth;
+
 
 function Transformation() {
   const images = [
@@ -39,12 +46,38 @@ function Transformation() {
       <h2 style={{ marginTop: "30px", fontWeight: "300" }}>
         some of our heros!
       </h2>
-      <p>press to zoom in</p>
-      <div className="images">
+      {/* <p>press to zoom in</p> */}
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={
+          width > 668 ? 3 : width > 300 ? 1 : 1
+        }
+        // onSlideChange={() => console.log('slide change')}
+        // onSwiper={(swiper) => console.log(swiper)}
+        className="images"
+      >
+        {images.map((im, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <img src={im} alt="" />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+        <h3
+          style={{
+            marginTop: "30px",
+            fontWeight: "300",
+            fontSize: "1.5rem",
+            marginBottom: "30px",
+            color: "#fff",
+          }}
+        >Swipe for more</h3>
+      {/* <div className="images">
         {images.map((im, index) => {
           return <img src={im} alt="" key={index} />;
         })}
-      </div>
+      </div> */}
       <button className="learn-more">
         <span className="circle" aria-hidden="true">
           <span className="icon arrow"></span>
