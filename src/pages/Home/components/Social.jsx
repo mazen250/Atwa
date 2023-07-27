@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/social.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { BsFacebook,BsInstagram,BsYoutube } from "react-icons/bs";
 function Social() {
   useEffect(() => {
     AOS.init();
@@ -19,10 +20,11 @@ function Social() {
       >
         <div className="buttonn">
           <div className="icon">
-            <i className="fab fa-facebook-f"></i>
+          <BsFacebook color="white" size={26}/>
           </div>
           <span>
             <a href="https://www.facebook.com/abdrahman.atwa" target="blank">
+             
               Facebook
             </a>
           </span>
@@ -38,7 +40,7 @@ function Social() {
         </div> */}
         <div className="buttonn">
           <div className="icon">
-            <i className="fab fa-instagram"></i>
+            <BsInstagram color="white" size={26}/>
           </div>
           <span>
             <a href="https://www.instagram.com/atwa_3/" target="blank">
@@ -54,7 +56,7 @@ function Social() {
         </div> */}
         <div className="buttonn">
           <div className="icon">
-            <i className="fab fa-youtube"></i>
+            <BsYoutube color="white" size={30}/>
           </div>
           <span>
             <a href="https://www.youtube.com/" target="blank">

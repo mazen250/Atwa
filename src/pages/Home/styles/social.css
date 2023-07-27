@@ -28,6 +28,7 @@
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-out;
+    align-items: center;
   }
   .wrapper .buttonn:hover {
     width: 200px;
@@ -40,6 +41,7 @@
     width: 60px;
     text-align: center;
     border-radius: 50px;
+    justify-content: center;
     box-sizing: border-box;
     line-height: 60px;
     transition: all 0.5s ease-out;
@@ -64,12 +66,10 @@
   .wrapper .buttonn .icon i {
     font-size: 25px;
     line-height: 60px;
-    /* padding-left: 20px; */
     transition: all 0.3s ease-out;
   }
   .wrapper .buttonn:hover .icon i {
     color: #fff;
-     /* padding-left: 20px;  */
   }
 
 

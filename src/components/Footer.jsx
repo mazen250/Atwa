@@ -2,26 +2,11 @@ import React from "react";
 import "../footer.css";
 import gmail from "../images/email.png";
 import location from "../images/location.png";
+import { BsFacebook,BsInstagram,BsYoutube } from "react-icons/bs";
+const width = window.innerWidth;
 const Footer = () => {
   return (
     <div className="footerContainer">
-      {/* <div className="footer">
-        <div className="left">
-          <h1>WORKING HOURS </h1>
-          <div className="hours">
-            <p>Sunday-Thursday 10 AM - 8 PM</p>
-            <p>Friday-Saturday 12 PM - 8 PM</p>
-          </div>
-        </div>
-        <div className="right">
-          <h1>ADDRESS</h1>
-          <div className="hourss">
-            <p>SOUL GYM -Sheraton heliopolis</p>
-            <p>12 Ahmed zaki st.</p>
-          </div>
-        </div>
-      </div>
-      <p>&copy; 2022 ABDELRAHMAN ATWA</p> */}
       <div className="footer">
         <div className="contact">
           <h1>contact us</h1>
@@ -41,21 +26,24 @@ const Footer = () => {
           <h1>Social Media</h1>
           <div className="bottunns">
             <div className="buttonn">
-              <a href="https://www.facebook.com/mazen.fayezmano">
+              <a href="https://www.facebook.com/mazen.fayezmano" target="_blank" rel="noopener noreferrer">
                 {" "}
-                <i className="fab fa-facebook-f"></i>
+                <BsFacebook  color="white" size={
+                  width > 500 ?26 : 20
+                }/>
+                
               </a>
             </div>
             <div className="buttonn">
-              <a href="https://www.facebook.com/mazen.fayezmano">
+              <a href="https://www.facebook.com/mazen.fayezmano" target="_blank" rel="noopener noreferrer">
                 {" "}
-                <i className="fab fa-instagram"></i>
+                <BsInstagram color="white" size={width > 500 ?26 : 20}/>
               </a>
             </div>
             <div className="buttonn">
-              <a href="https://www.facebook.com/mazen.fayezmano">
+              <a href="https://www.facebook.com/mazen.fayezmano" target="_blank" rel="noopener noreferrer">
                 {" "}
-                <i className="fab fa-youtube"></i>
+                <BsYoutube color="white" size={width > 500 ?30 : 24}/>
               </a>
             </div>
           </div>
