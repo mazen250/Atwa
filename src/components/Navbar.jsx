@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import ScrollIntoView from "react-scroll-into-view";
 import { Link } from "react-router-dom";
+import HeaderLogo from '../images/atwa-logo.jpeg'
 const Nav = styled.nav`
   padding: 0 50px;
   min-height: 8vh;
-  background: #1c2022;
+  background: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,6 +76,7 @@ const Linkk = styled.a`
   :hover {
     text-decoration: underline;
   }
+  font-size: 20px;
 `;
 
 const NavIcon = styled.button`
@@ -84,6 +86,7 @@ const NavIcon = styled.button`
   outline: none;
   z-index: 110;
   padding-top: 10px;
+  margin-top: 20px;
   @media (min-width: 769px) {
     display: none;
   }
@@ -111,7 +114,7 @@ const Overlay = styled.div`
   z-index: 100;
   background: #1c2022;
   transition: height 0.4s ease-in-out;
-
+  
   @media (min-width: 769px) {
     display: none;
   }
@@ -152,7 +155,16 @@ const Navbar = () => {
               textDecoration: "none",
             }}
           >
-            ATWA
+            <img src={HeaderLogo} alt="Atwa" 
+            style={{
+              width: window.innerWidth > 768 ? "60px" : "50px",
+              // height: "50px",
+              // borderRadius: "50%",
+              marginRight: "10px",
+              marginTop:window.innerWidth > 768 ? "0px" : "20px"
+              // marginBottom: "10px"
+            }}
+            />
           </a>
         </Logo>
         <Menu>
