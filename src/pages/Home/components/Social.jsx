@@ -18,52 +18,13 @@ function Social() {
         // data-aos-duration="2000"
         // data-aos-anchor-easing="ease-in-out"
       >
-        <div className="buttonn">
-          <div className="icon">
-          <BsFacebook color="white" size={26}/>
-          </div>
-          <span>
-            <a href="https://www.facebook.com/abdrahman.atwa" target="blank">
-             
-              Facebook
-            </a>
-          </span>
-        </div>
-        {/* <div className="buttonn">
-          <div className="icon">
-            <i className="fab fa-whatsapp"></i>
-          </div>
-          <span>
-            {" "}
-            <a href="https://www.facebook.com/mazen.fayezmano">Whatsapp</a>
-          </span>
-        </div> */}
-        <div className="buttonn">
-          <div className="icon">
-            <BsInstagram color="white" size={26}/>
-          </div>
-          <span>
-            <a href="https://www.instagram.com/atwa_3/" target="blank">
-              Instagram
-            </a>
-          </span>
-        </div>
-        {/* <div class="buttonn">
-          <div class="icon">
-            <i class="fab fa-github"></i>
-          </div>
-          <span>Github</span>
-        </div> */}
-        <div className="buttonn">
-          <div className="icon">
-            <BsYoutube color="white" size={30}/>
-          </div>
-          <span>
-            <a href="https://www.youtube.com/" target="blank">
-              Youtube
-            </a>
-          </span>
-        </div>
+       <div class="social-links">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-github"></i></a>
+        <a href=""><i class="fab fa-linkedin-in"></i></a>
+      </div>
       </div>
     </div>
   );
